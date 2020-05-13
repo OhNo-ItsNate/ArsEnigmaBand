@@ -1,0 +1,286 @@
+/*----------------------------------------------------------------GENERAL---------------------------------------------------------------*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/ArsEnigmaBackground2.jpg);
+    background-position: center top;
+    background-attachment: scroll;
+    color: rgb(250, 250, 225);
+    font: 11pt Century Gothic, Sans-Serif;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+header, nav, aside, article, footer {
+    display: block;
+}
+
+.bioButton:focus, .songLink:focus, #soundCloudRadioDial:focus {
+    border: 2px solid lightgreen;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    font-weight: 700;
+    color: maroon;
+}
+a:hover {
+    color: lightgreen;
+}
+
+
+/*-------------------------------------------------------------CONTAINERS---------------------------------------------------------------*/
+
+.wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 115vh;
+    max-width: 100vw !important;
+    min-width: auto;
+}
+
+#bannerArea {
+    width: 100%;
+    max-width: 100vw !important;
+    min-width: 90vw;
+    position: absolute; 
+    left: 0;
+    z-index: 100;
+}
+#arsWoodenBanner {
+    max-width: 100vw;
+}
+
+/*-----------------------------------------------------------------BIO------------------------------------------------------------------*/
+
+/*----------STYLING FOR BIO IMAGE-----------*/
+
+#bio {
+    width: 97%;
+    min-height: 35vh;
+    position: absolute;
+    background-image: url(../img/blankBio.png);
+    background-size: contain;
+    color: slategray;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 5px;
+    display: none;
+}
+
+#bio a {
+    color: slategray;
+    text-decoration: none;
+}
+
+/*STYLING FOR SCREENREADER BIO*/
+
+#bioScreenReader, #bioScreenReader a {
+    width: 1px;
+    position: absolute;
+    right: 25%;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*STYLING FOR BIO BUTTON ON BANNER AND GO BACK BUTTON ON BIO*/
+
+.bioButton {
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 50px;
+    width: 20%;
+    height: 80%;
+    z-index: 100;
+    top: -13%;
+    left: 10.1%;
+    display: none;
+}
+
+.questionMark {
+    width: 100%;
+}
+
+.questionMark2 {
+    width: 100%;
+    display: none;
+}
+
+.bioButton:hover {
+    cursor: pointer;
+}
+
+.bioButton:hover .questionMark {
+    display: none;
+}
+
+.bioButton:hover .questionMark2 {
+    display: initial;
+}
+
+.backButton {
+    font: 15pt Century Gothic, Sans-Serif;
+    background-color: transparent;
+    padding: 10px;
+    border: 2px dashed;
+    border-color: burlywood;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.backButton:hover {
+    cursor: pointer;
+}
+
+.backButton:focus {
+    border: solid brown 3px;
+}
+
+/*----------------------------------------------------------------RADIO-----------------------------------------------------------------*/
+#radio{
+    width: 100%;
+    max-width: none;
+    position: relative;
+    right: 0;
+    top: 8vh;
+    padding: 0;
+}
+#enigmaRadioDesktop {
+    display: none;
+}
+#enigmaRadioMobile {
+    display: initial;
+    width: 100%;
+}
+
+/*STYLING FOR RADIO LINKS*/
+
+.songButton {
+    position: absolute;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.Off {
+    background: radial-gradient(transparent, rgba(190,0,0,0.1) 55%);
+    border: transparent;
+    box-shadow: 0 0 15px 0.75px rgba(190,0,0,0.7);
+}
+
+.On {
+    background: radial-gradient(transparent, rgba(190,0,250,0.2) 55%);
+    border: transparent;
+    box-shadow: 0 0 15px 0.75px rgba(190,0,250,0.8);
+    display: none;
+}
+
+.Off:hover {
+    background: radial-gradient(transparent, rgba(190,0,0,0.3) 55%);
+    border: rgba(190,0,0,0.7) solid 1px;
+    box-shadow: 0 0 15px 4.5px rgba(190,0,0,1);
+}
+
+.On:hover {
+    background: radial-gradient(transparent, rgba(190,0,250,0.3) 55%);
+    border: rgba(190,0,250,0.7) solid 1px;
+    box-shadow: 0 0 15px 4.5px rgba(190,0,250,1);
+}
+
+#gottaLetMeKnow {
+    top: 73%;
+    left: 13.5%;
+}
+
+#outMyWindow {
+    top: 73%;
+    left: 32.5%;
+}
+
+#leftToRust {
+    top: 73%;
+    left: 59.7%;
+}
+
+#soundCloudRadioDial {
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 1.25% 1.25% 1.5%;
+    border: rgba(255,255,255,0.3) solid 1px;
+    box-shadow: 0 0 2.5px 1px rgba(255,255,255,0.5);
+    top: 69.3%;
+    left: 45.7%;
+    width: 8vw;
+    height: 4.2vh;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#soundCloudRadioDial:hover {
+    border: rgba(255,255,255,0.6) solid 1px;
+    box-shadow: 0 0 10px 4px white;
+}
+
+#soundCloudRadioDial img {
+    width: 100%;
+}
+
+/*----------------------------------------------------------JS DISABLED NOTICE----------------------------------------------------------*/
+.jsDisabled {
+    width: 94%;
+    min-height: 50vh;
+    position: absolute;
+    background-image: url(../img/blankNotice-cutout.png);
+    background-size: cover;
+    color: slategray;
+    font-size: 3vh;
+    top: 5vh;
+    left: 0;
+    z-index: 100;
+    margin: 1.25%;
+    padding: 7vh 1vh 0;
+}
+.jsDisabled p {
+    margin: 0;
+}
+
+/*-----------------------------------------------------------------SMOKE----------------------------------------------------------------*/
+
+.smokeRight, .smokeRight2a, .smokeRight2b, .smokeRight2c, .smokeRight3, .smokeRight4, .smokeLeftA, .smokeLeftB, .smokeLeftC, .smokeLeftD {
+    display: none;
+}
+
+/*----------------------------------------------------------------FOOTER----------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: -2%;
+    z-index: 100;
+    background: linear-gradient(to top, black 60%, transparent);
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    padding-top: 7vh;
+    padding-bottom: 1vh;
+}
+
+footer img {
+    width: 10%;
+    margin: 1%; 
+}
+
+
+/*to make older browsers work with HTML5 layout*/
+
+/*check into incorporating media queries  at https://www.w3schools.com/cssref/css3_pr_mediaquery.asp. Use queries to handle responsive design/hide or display desktop, tablet, and phone views. Also, maybe develop a tablet view following completion of phone view.*/
