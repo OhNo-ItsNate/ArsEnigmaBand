@@ -7,7 +7,7 @@ body {
     background-position: center top;
     background-attachment: scroll;
     color: rgb(250, 250, 225);
-    font: 11pt Century Gothic, Sans-Serif;
+    font: 1.5rem Century Gothic, Sans-Serif;
     overflow-x: hidden;
     overflow-y: visible;
 }
@@ -57,7 +57,7 @@ a:hover {
 /*----------STYLING FOR BIO IMAGE-----------*/
 
 #bio {
-    width: 97%;
+    width: 98%;
     min-height: 35vh;
     position: absolute;
     background-image: url(../img/blankBio.png);
@@ -65,7 +65,7 @@ a:hover {
     color: slategray;
     top: 0;
     z-index: 100;
-    margin: 0;
+    margin: 0 0.5%;
     padding: 5px;
     display: none;
 }
