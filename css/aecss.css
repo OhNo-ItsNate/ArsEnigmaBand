@@ -223,7 +223,7 @@ a:hover {
     left: 45.7%;
     width: 8vw;
     height: 8vw;
-    z-index: 90;
+    z-index: 100;
     cursor: pointer;
 }
 
