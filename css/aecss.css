@@ -47,7 +47,7 @@ a:hover {
     min-width: 90vw;
     position: absolute; 
     left: 0;
-    z-index: -1;
+    z-index: 0;
 }
 #arsWoodenBanner {
     max-width: 100vw;
@@ -91,15 +91,14 @@ a:hover {
 
 .bioButton {
     position: absolute;
+    left: 9.5vw;
+    top: -2.5vw;
     padding: 0;
     background-color: transparent;
     border: transparent;
     border-radius: 50px;
-    width: 20%;
-    height: 80%;
-    z-index: 100;
-    top: -13%;
-    left: 10.1%;
+    width: 20.3%;
+    z-index: 99;
     display: none;
 }
 
