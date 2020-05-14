@@ -12,8 +12,8 @@ body {
     overflow-y: visible;
 }
 
-header, nav, aside, article, footer {
-    display: block;
+div {
+    display: inline-block;
 }
 
 .bioButton:focus, .songLink:focus, #soundCloudRadioDial:focus {
@@ -33,6 +33,7 @@ a:hover {
 /*-------------------------------------------------------------CONTAINERS---------------------------------------------------------------*/
 
 .wrapper {
+    position: relative;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -147,7 +148,6 @@ a:hover {
     width: 100%;
     max-width: none;
     position: relative;
-    top
     right: 0;
     top: 8vh;
     padding: 0;
