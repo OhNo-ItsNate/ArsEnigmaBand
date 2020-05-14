@@ -47,7 +47,7 @@ a:hover {
     min-width: 90vw;
     position: absolute; 
     left: 0;
-    z-index: 100;
+    z-index: -1;
 }
 #arsWoodenBanner {
     max-width: 100vw;
