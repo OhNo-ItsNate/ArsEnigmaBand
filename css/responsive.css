@@ -36,90 +36,59 @@
     /*-----------------SMOKE----------------*/
 
     .smokeRight, .smokeRight2a, .smokeRight2b, .smokeRight2c, .smokeRight3, .smokeRight4, .smokeLeftA, .smokeLeftB, .smokeLeftC, .smokeLeftD {
-    display: initial;
-}
+        display: initial;
+        z-index: 80;
+    }
+    
+    .smokeRight, .smokeRight2a, .smokeRight2b {
+        width: 60%;
+        top: -20%;
+    }
     
     .smokeRight {
-        width: 60%;
-        position: absolute;
         right: -10%;
-        top: -20%;
-        z-index: 80;
     }
 
     .smokeRight2a {
-        width: 60%;
-        position: absolute;
-        right: -10%;
-        top: -20%;
-        z-index: 81;
+        right: -15%;
     }
 
     .smokeRight2b {
-        width: 60%;
-        position: absolute;
         right: -20%;
-        top: -20%;
-        z-index: 91;
     }
 
     .smokeRight2c {
-        width: 60%;
-        position: absolute;
-        right: -15%;
+        right: -25%;
         top: -15%;
-        z-index: 98;
     }
 
     .smokeRight3 {
-        width: 60%;
-        position: absolute;
         right: -5%;
-        bottom: 0%;
-        z-index: 99;
+        bottom: 0;
     }
     .smokeRight4 {
-        width: 60%;
-        position: absolute;
         right: -10%;
         bottom: -15%;
-        z-index: 99;
     }
-
-    .smokeLeftA {
-        width: 60%;
-        position: absolute;
-        left: -8%;
-        bottom: -8%;
-        z-index: 96;
+    
+    .smokeLeftA, .smokeLeftB, .smokeLeftC, .smokeLeftD {
         width: 70%;
     }
 
-    .smokeLeftB {
-        width: 60%;
-        position: absolute;
+    .smokeLeftA, .smokeLeftB {
         left: -8%;
         bottom: -8%;
-        z-index: 97;
-        width: 70%;
     }
 
     .smokeLeftC {
         width: 60%;
-        position: absolute;
         left: 0;
         bottom: -20%;
-        z-index: 98;
-        width: 70%;
     }
 
     .smokeLeftD {
-        width: 60%;
-        position: absolute;
         left: -21%;
         bottom: 0;
-        z-index: 99;
-        width: 70%;
     }
 
     /*-----------------BIO------------------*/
@@ -129,14 +98,20 @@
     #bio {
         width: 100%;
         min-height: 30vh;
-        position: absolute;
+        left: 0;
+        margin: 0;
     }
 
     #bio div {
         width: 100%;
-        position: absolute;
         text-align: center;
         bottom: 15%;
+    }
+    
+    .bioButton {
+        left: 4.9vw;
+        top: -1.2vw;
+        width: 10.3%;
     }
 
     /*STYLING FOR BIO BUTTON ON BANNER AND GO BACK BUTTON ON BIO*/
@@ -151,7 +126,7 @@
     #radio{
         max-width: 850px;
         right: 20.8%;
-        top: -10vh;
+        top: -5vh;
     }
 
     /*DESKTOP*/
@@ -247,6 +222,11 @@
     /*-----------------BIO------------------*/
 
     /*STYLING FOR BIO BUTTON ON BANNER AND GO BACK BUTTON ON BIO*/
+    
+    .bioButton {
+        left: 4.85vw;
+        top: -1.4vw;
+    }
 
     .backButton {
         width: 15%;
@@ -290,12 +270,17 @@
     /*STYLING FOR BIO IMAGE*/
 
     #bio {
-        width: 99.5%;
+        width: 100%;
         min-height: 15vh;
         font-size: 1.2rem;
     }
 
     /*STYLING FOR BIO BUTTON ON BANNER AND GO BACK BUTTON ON BIO*/
+    
+    .bioButton {
+        left: 4.85vw;
+        top: -1.4vw;
+    }
 
     .backButton {
         width: 10%;
@@ -353,95 +338,6 @@
         width: 100%;
     }
 
-    /*-----------------SMOKE----------------*/
-
-    .smokeRight, .smokeRight2a, .smokeRight2b, .smokeRight2c, .smokeRight3, .smokeRight4, .smokeLeftA, .smokeLeftB, .smokeLeftC, .smokeLeftD {
-    display: initial;
-}
-    
-    .smokeRight {
-        width: 60%;
-        position: absolute;
-        right: -10%;
-        top: -20%;
-        z-index: 80;
-    }
-
-    .smokeRight2a {
-        width: 60%;
-        position: absolute;
-        right: -10%;
-        top: -20%;
-        z-index: 81;
-    }
-
-    .smokeRight2b {
-        width: 60%;
-        position: absolute;
-        right: -20%;
-        top: -20%;
-        z-index: 91;
-    }
-
-    .smokeRight2c {
-        width: 60%;
-        position: absolute;
-        right: -15%;
-        top: -15%;
-        z-index: 98;
-    }
-
-    .smokeRight3 {
-        width: 60%;
-        position: absolute;
-        right: -5%;
-        bottom: 0%;
-        z-index: 99;
-    }
-    .smokeRight4 {
-        width: 60%;
-        position: absolute;
-        right: -10%;
-        bottom: -15%;
-        z-index: 99;
-    }
-
-    .smokeLeftA {
-        width: 60%;
-        position: absolute;
-        left: -8%;
-        bottom: -8%;
-        z-index: 96;
-        width: 70%;
-    }
-
-    .smokeLeftB {
-        width: 60%;
-        position: absolute;
-        left: -8%;
-        bottom: -8%;
-        z-index: 97;
-        width: 70%;
-    }
-
-    .smokeLeftC {
-        width: 60%;
-        position: absolute;
-        left: 0;
-        bottom: -20%;
-        z-index: 98;
-        width: 70%;
-    }
-
-    .smokeLeftD {
-        width: 60%;
-        position: absolute;
-        left: -21%;
-        bottom: 0;
-        z-index: 99;
-        width: 70%;
-    }
-
     /*-----------------BIO------------------*/
 
     /*STYLING FOR BIO IMAGE*/
@@ -449,7 +345,6 @@
     #bio {
         width: 100%;
         min-height: 30vh;
-        position: absolute;
     }
 
     #bio div {
@@ -460,6 +355,11 @@
     }
 
     /*STYLING FOR BIO BUTTON ON BANNER AND GO BACK BUTTON ON BIO*/
+    
+    .bioButton {
+        left: 4.85vw;
+        top: -1.4vw;
+    }
 
     .backButton {
         width: 30%;
@@ -471,7 +371,7 @@
     #radio{
         max-width: 1174px;
         right: 14%;
-        top: -8vh;
+        top: -2vh;
     }
     
     /*-----------JS DISABLED NOTICE---------*/
