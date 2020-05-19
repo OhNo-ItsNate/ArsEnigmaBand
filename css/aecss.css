@@ -286,7 +286,7 @@ a:hover {
 
 /*-----------------------------------------------------------------SMOKE----------------------------------------------------------------*/
 
-.smokeRight, .smokeRight2a, .smokeRight2b, .smokeRight2c, .smokeRight3, .smokeRight4, .smokeLeftA, .smokeLeftB, .smokeLeftC, .smokeLeftD {
+.smokeRight, .smokeLeftA {
     display: none;
 }
 
