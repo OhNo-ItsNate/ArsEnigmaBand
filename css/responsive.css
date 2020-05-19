@@ -35,60 +35,21 @@
 
     /*-----------------SMOKE----------------*/
 
-    .smokeRight, .smokeRight2a, .smokeRight2b, .smokeRight2c, .smokeRight3, .smokeRight4, .smokeLeftA, .smokeLeftB, .smokeLeftC, .smokeLeftD {
+    .smokeRight, .smokeLeftA {
         display: initial;
         z-index: 80;
     }
     
-    .smokeRight, .smokeRight2a, .smokeRight2b {
-        width: 60%;
-        top: -20%;
-    }
-    
     .smokeRight {
-        right: -10%;
+        width: 100%;
+        top: -40%;
+        right: -2.5%;
     }
-
-    .smokeRight2a {
-        right: -15%;
-    }
-
-    .smokeRight2b {
-        right: -20%;
-    }
-
-    .smokeRight2c {
-        right: -25%;
-        top: -15%;
-    }
-
-    .smokeRight3 {
-        right: -5%;
-        bottom: 0;
-    }
-    .smokeRight4 {
-        right: -10%;
-        bottom: -15%;
-    }
-    
-    .smokeLeftA, .smokeLeftB, .smokeLeftC, .smokeLeftD {
-        width: 70%;
-    }
-
-    .smokeLeftA, .smokeLeftB {
-        left: -8%;
-        bottom: -8%;
-    }
-
-    .smokeLeftC {
-        width: 60%;
-        left: 0;
-        bottom: -20%;
-    }
-
-    .smokeLeftD {
-        left: -21%;
-        bottom: 0;
+ 
+    .smokeLeftA {
+        width: 100%;
+        bottom: -10%;
+        left: 
     }
     
     /*-----------HINT MESSAGE---------------*/
