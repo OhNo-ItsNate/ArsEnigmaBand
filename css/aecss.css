@@ -143,14 +143,14 @@ a:hover {
 /*STYLING FOR BIO BUTTON ON BANNER AND GO BACK BUTTON ON BIO*/
 
 .bioButton {
-    left: 8vw;
-    top: -2.15vw;
+    left: 9.5vw;
+    top: -2.3vw;
     padding: 0;
     margin: 0;
     background-color: transparent;
     border: transparent;
     border-radius: 50px;
-    width: 17vw;
+    width: 20.3vw;
     z-index: 99;
     display: none;
 }
